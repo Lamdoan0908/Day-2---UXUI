@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản trị hệ thống</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyber-bg">
+  <header class="neon-header">
+    <h2>⚡ Trang quản trị ⚡</h2>
+    <button id="logoutBtn" class="neon-btn">Đăng xuất</button>
+  </header>
+
+  <main>
+    <section class="neon-box">
+      <h3>👤 Quản lý Người dùng</h3>
+      <form id="userForm">
+        <input type="text" id="name" placeholder="Họ tên" required>
+        <input type="email" id="emailUser" placeholder="Email" required>
+        <select id="role">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button type="submit" class="neon-btn">Thêm</button>
+      </form>
+      <table class="neon-table">
+        <thead>
+          <tr>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Vai trò</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+      </table>
+    </section>
+
+    <section class="neon-box">
+      <h3>🛍️ Quản lý Sản phẩm</h3>
+      <form id="productForm">
+        <input type="text" id="pname" placeholder="Tên sản phẩm" required>
+        <input type="number" id="price" placeholder="Giá" required>
+        <input type="text" id="desc" placeholder="Mô tả" required>
+        <input type="text" id="image" placeholder="Link ảnh" required>
+        <button type="submit" class="neon-btn">Thêm</button>
+      </form>
+      <table class="neon-table">
+        <thead>
+          <tr>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>Mô tả</th>
+            <th>Ảnh</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="productTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
